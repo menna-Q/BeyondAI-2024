@@ -1,4 +1,4 @@
-![BeyondAI Banner for Research Projects](BeyondAI_Banner_Research_Projects_2024.png)
+![BeyondAI Banner for Research Projects](../BeyondAI_Banner_Research_Projects_2024.png)
 
 # Your Project Title
 
