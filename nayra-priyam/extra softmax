@@ -1,0 +1,52 @@
+import torch # SOFTMAX IS USED HERE WITH CROSSENTROPY
+import torch.nn as nn
+import torch.nn.init as init
+from torch.utils.data import DataLoader
+import torchvision
+import torchvision.transforms as transforms
+
+model = nn.Sequential(
+    nn.Linear(784, 196),  # Input layer starting with number of pixels
+    nn.ReLU(),           # ReLU Activation
+    nn.Linear(196, 49),  # Hidden layer 1
+    nn.ReLU(),           # ReLU Activation again
+    nn.Linear(49, 10),   # Hidden layer 2
+    nn.Softmax(dim=1)    # Softmax to convert data to propabilites
+)
+
+for layer in model.modules():
+    if isinstance(layer, nn.Linear):
+        init.kaiming_uniform_(layer.weight, nonlinearity='relu')
+        if layer.bias is not None:
+            init.zeros_(layer.bias)
+transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize((0.5,), (0.5,))  #
+])
+
+train_dataset = torchvision.datasets.FashionMNIST(root='./data', train=True, download=True, transform=transform)
+test_dataset = torchvision.datasets.FashionMNIST(root='./data', train=False, download=True, transform=transform)
+train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True)
+test_loader = DataLoader(test_dataset, batch_size=64, shuffle=False)
+
+optimizer = torch.optim.Adam(model.parameters(), lr=0.001) # Adam optimization
+loss_fn = nn.CrossEntropyLoss() # loss function, convert data to propabilites AGAIN, FOR THE SECOND TIME!!!
+
+num_epochs = 20
+for epoch in range(num_epochs):
+    model.train()
+    running_loss = 0.0
+    for batch_idx, (images, labels) in enumerate(train_loader):
+        images = images.view(-1, 784)
+        optimizer.zero_grad()
+        outputs = model(images)
+        loss = loss_fn(outputs, labels)
+        loss.backward()
+        optimizer.step()
+        running_loss += loss.item()
+
+    avg_train_loss = running_loss / len(train_loader)  # Calculate the average training loss
+    print(f'Epoch {epoch+1}/{num_epochs} \t\t Training Loss: {avg_train_loss:.6f}')
+
+    #indicates overfitting, a plateau especially for the final epocjs , and propable a vanishign gradient
+
