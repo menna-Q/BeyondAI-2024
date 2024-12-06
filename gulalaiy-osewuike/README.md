@@ -2,9 +2,18 @@
 
 # Weight Initialization for MLPs
 
+# Student Researchers
+
+- Osewuike Igue
+- Gulalaiy Khankhel
+
+**Research Mentor**
+
+- Barbora Barancikova
+
 # Motivation
   
-In Multi-layer Perceptrons (MLPs), how the weights are initialized is very important in the training process, as well as the overall performance of the MLP. The right initialization can make training faster, avoid problems like vanishing or exploding gradients, and generally lead to better performance. This project looks into how different weight initialization methods impact MLPs' performance. We’re also interested in how these methods work together with things like activation functions and optimizers. Ultimately, the goal is to figure out which initialization strategies work best for different situations.
+In Multi-layer Perceptrons (**MLP**s), how the weights are initialized is very important in the training process, as well as the overall performance of the MLP. The right initialization can make training faster, avoid problems like vanishing or exploding gradients, and generally lead to better performance. This project looks into how different weight initialization methods impact MLPs' performance. We’re also interested in how these methods work together with things like **activation functions** and **optimizers**. Ultimately, the goal is to figure out which initialization strategies work best for different situations.
 
 # The Research Questions we aim to answer include
 
@@ -18,22 +27,22 @@ We ran 3 main experiments to analyze the performance of Weight Initialization Me
 
 We hoped to study:
 
-- The effect of different activations (ReLU, Tanh, Sigmoid) on the performance of different weight initialization methods.
-- The effect of different optimizers (SGD, Adam) on the performance of different weight initialization methods.
-- The effect of MLP depth on weight initialization performance in a shallow and deep architecture.
+- The effect of different activations (**ReLU, Tanh, Sigmoid**) on the performance of different weight initialization methods.
+- The effect of different optimizers (**SGD, Adam**) on the performance of different weight initialization methods.
+- The effect of **MLP depth** on weight initialization performance in a shallow and deep architecture.
 
-We trained the MLP on the MNIST dataset with a learning rate of 0.01, batch size of 150, and Cross Entropy Loss. For activation and optimizer experiments, the model used 2 hidden layers; for depth analysis, we compared 1 vs. 6 hidden layers. 
+We trained the MLP on the **MNIST dataset** with a learning rate of 0.01, batch size of 150, and Cross Entropy Loss. For activation and optimizer experiments, the model used 2 hidden layers; for depth analysis, we compared 1 vs. 6 hidden layers. 
 
 # Results
 
-Our research shows that Xavier and He Initialization perform well across various setups: Xavier suits tanh and sigmoid, while He is ideal for ReLU. Random Initialization works for shallow models but risks gradient issues in deeper ones. Zero Initialization fails in all cases, as it prevents learning. In conclusion, Xavier and He are the best choices, Random is viable for simple models, and Zero should be avoided.
+Our research shows that **Xavier** and **He** Initialization perform well across various setups: **Xavier** suits **tanh** and **sigmoid**, while **He** is ideal for **ReLU**. **Random** Initialization works for shallow models but risks gradient issues in deeper ones. **Zero** Initialization fails in all cases, as it prevents learning. In conclusion, **Xavier** and **He** are the best choices, **Random** is viable for simple models, and **Zero** should be avoided.
 
 # Conclusion
-Our research shows that Xavier and He Initialization perform well across various setups: Xavier suits tanh and sigmoid, while He is ideal for ReLU. Random Initialization works for shallow models but risks gradient issues in deeper ones. Zero Initialization fails in all cases, as it prevents learning. In conclusion, Xavier and He are the best choices, Random is viable for simple models, and Zero should be avoided.
+Our research shows that **Xavier** and **He** Initialization perform well across various setups: **Xavier** suits **tanh** and **sigmoid**, while **He** is ideal for **ReLU**. **Random** Initialization works for shallow models but risks gradient issues in deeper ones. **Zero** Initialization fails in all cases, as it prevents learning. In conclusion, **Xavier** and **He** are the best choices, **Random** is viable for simple models, and **Zero** should be avoided.
 
 # Future Research
 
-Future research on this topic could explore additional weight initialization techniques, such as LeCun or Orthogonal. Moreover, our findings could be extended to more complex tasks and diverse datasets to test their generalisability and provide more insight into how different initializations interact with various architectures. This could help refine best practices across a wider range of applications.
+Future research on this topic could explore additional weight initialization techniques, such as **LeCun** or **Orthogonal**. Moreover, our findings could be extended to more complex tasks and diverse datasets to test their generalisability and provide more insight into how different initializations interact with various architectures. This could help refine best practices across a wider range of applications.
 
 # References
 
