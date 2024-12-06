@@ -2,8 +2,8 @@
 
 # Comparing Transformers to LSTMs with Attention
 
-Motivation:
-The "Attention is All You Need" paper introduced the Transformer model, which has revolutionized natural language processing (NLP). This research aims to compare the performance of Transformers to LSTMs with attention mechanisms, which were a dominant approach before Transformers. Understanding the strengths and weaknesses of each architecture is crucial for making informed choices in NLP tasks.
+\section{Motivation:}
+\item The "Attention is All You Need" paper introduced the Transformer model, which has revolutionized natural language processing (NLP). This research aims to compare the performance of Transformers to LSTMs with attention mechanisms, which were a dominant approach before Transformers. Understanding the strengths and weaknesses of each architecture is crucial for making informed choices in NLP tasks.
 
 Research Question:
 After our thorough literature review, we decided to focus our research on the following question: How do Transformers compare to LSTMs with attention in performance and efficiency for text-based sentiment analysis?
