@@ -19,15 +19,15 @@
     - **With respect to C:**
       - Accuracy peaked at **C = 1.26 to 1.3**
       - Reached a peak accuracy of **0.963** at **Gamma = 0.026** (Peak Accuracy in Hyperparameter Tuning)
-      - **For MLP Model:**
-           - **Cross Validation Accuracy:**
-             - Fold 1 achieved an accuracy of **94.38%**.
-             - Fold 2 achieved an accuracy of **93.44%**.
-             - Fold 3 achieved an accuracy of **94.07%**.
-           - **Fitness Score:**
-                - The average fitness score or cross validation accuracy score across all folds is **93.96%**.
-           -  **High Accuracy:**
-                -  A fitness score close to **94%** demonstrates that the hyperparameters derived from the quantum circuit provide a strong starting point for the classical MLP.
+- **For MLP Model:**
+     - **Cross Validation Accuracy:**
+          - Fold 1 achieved an accuracy of **94.38%**.
+          - Fold 2 achieved an accuracy of **93.44%**.
+          - Fold 3 achieved an accuracy of **94.07%**.
+     - **Fitness Score:**
+          - The average fitness score or cross validation accuracy score across all folds is **93.96%**.
+     -  **High Accuracy:**
+          -  A fitness score close to **94%** demonstrates that the hyperparameters derived from the quantum circuit provide a strong starting point for the classical MLP.
 6. Draw your conclusions
 - **For the SVM Model:**
   - A combination of:
