@@ -2,7 +2,7 @@
 
 # Weight Initialization for MLPs
 
-# Student Researchers
+**Student Researchers**
 
 - Osewuike Igue
 - Gulalaiy Khankhel
@@ -35,7 +35,7 @@ We trained the MLP on the **MNIST dataset** with a learning rate of 0.01, batch 
 
 # Results
 
-Our results included many visualizations that provide insights into the performance of different weight initialization techniques. **Training Loss Trends** showcased how each method converges, and **Test Loss Trends** emphasized generalization performance. **Test Accuracy Trends** showed us how well our MLP performs on unseen data. Additionally, **Weight Distribution Histograms** before and after training showed us how initialization influences weight magnitudes, which can in turn affect stability and generalization. Lastly, **Activation Distributions** across layers helped us understand how different methods impact activation values. In our research poster, we were not able to include all visualizations, hence, for seeing all of our visualizations, feel free to check out our code.
+Our results included many visualizations that provided insights into the performance of different weight initialization techniques. **Training Loss Trends** showcased how each method converges, and **Test Loss Trends** emphasized generalization performance. **Test Accuracy Trends** showed us how well our MLP performs on unseen data. Additionally, **Weight Distribution Histograms** before and after training showed us how initialization influences weight magnitudes, which can in turn affect stability and generalization. Lastly, **Activation Distributions** across layers helped us understand how different methods impact activation values. In our research poster, we were not able to include all visualizations, hence, for seeing all of our visualizations, feel free to check out our code.
 
 # Conclusion
 
