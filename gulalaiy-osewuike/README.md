@@ -42,6 +42,7 @@ Our results included many visualizations that provided insights into the perform
 **Our** **research** shows that **Xavier** and **He** **Initialization** perform well across various setups: **Xavier** suits tanh and sigmoid, while **He** is ideal for ReLU. **Random Initialization** works for shallow models but risks gradient issues in deeper ones, while **Zero** **Initialization** fails entirely as it prevents learning. **He** initialization excels by maintaining gradient flow and avoiding inactive neurons hence ensuring faster convergence with ReLU. **Xavier** balances gradient propagation in deeper networks leading to better stability and test accuracy. In conclusion, **Xavier** and **He** are the best choices, **Random** is viable for simple models, and **Zero** should be avoided. 
 
 
+
 # Future Research
 
 Future research on this topic could explore additional weight initialization techniques, such as **LeCun** or **Orthogonal**. Moreover, our findings could be extended to more complex tasks and diverse datasets to test their generalisability and provide more insight into how different initializations interact with various architectures. This could help refine best practices across a wider range of applications.
