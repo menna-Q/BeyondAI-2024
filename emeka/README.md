@@ -36,7 +36,8 @@ In terms of recall, both models didn't recall poperly but MLP recalled better.
 
 III. The MLPs begin to overfit with datasets of a out 7000 datapoints at about 75-80 epochs. KANs had fluctuating accuracies and loss, it also didn't converge,and in turn doesn't generalize well.
 
-5. Draw your conclusions
+5. Conclusions
+
 Overall, I'll say MLPs perform better than KANs in terms of comparison task.
 
 > The research poster for this project can be found in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
