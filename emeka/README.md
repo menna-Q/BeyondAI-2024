@@ -28,6 +28,7 @@ I also used larger epochs to test for overfitting in the modes.
 
 4. Result 
 In accordance to the research question
+
 I. Based on convergence rate,MLPs converge to an accuracy range of (97-100)%, while KANs didn't converge and also had a very fluctuating accuracy despite a longer execution time.
 
 II. In terms of accuracy MLP had higher accuracy than KANs, the highest accuracy attained by KANs was 97.5% while that of MLPs was 100%. In terms of f1 score, that of MLPs was higher than that of KANs.
