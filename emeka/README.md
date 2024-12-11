@@ -32,7 +32,9 @@ In accordance to the research question
 I. Based on convergence rate,MLPs converge to an accuracy range of (97-100)%, while KANs didn't converge and also had a very fluctuating accuracy despite a longer execution time.
 
 II. In terms of accuracy MLP had higher accuracy than KANs, the highest accuracy attained by KANs was 97.5% while that of MLPs was 100%. In terms of f1 score, that of MLPs was higher than that of KANs.
-In terms of recall, both models didn't recall poperly but MLP recalled better. 
+In terms of recall, both models didn't recall poperly but MLP recalled better.
+
+III. The MLPs begin to overfit with datasets of a out 7000 datapoints at about 75-80 epochs. KANs had fluctuating accuracies and loss, it also didn't converge,and in turn doesn't generalize well.
 
 5. Draw your conclusions
 Overall, I'll say MLPs perform better than KANs in terms of comparison task.
