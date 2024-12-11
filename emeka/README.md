@@ -1,6 +1,6 @@
 ![BeyondAI Banner for Research Projects](../BeyondAI_Banner_Research_Projects_2024.png)
 
-# Your Project Title
+# Kolmogrov Arnold Networks vs Multi-Layer Perceptrons 
 
 Provide a description of your project including 
 
